@@ -1,0 +1,356 @@
+/**********************************/
+/*       Site Template:           */
+/**********************************/
+/*#body background-color:#FFFFD6;*/
+
+
+
+#dialogoverlay{
+	display: none;
+	opacity: .8;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: #FFF;
+	width: 100%;
+	z-index: 10;
+}
+
+#dialogbox{
+	display: none;
+	position: fixed;
+	background: #0000d9; /* Was #000; */
+	border-radius:7px; 
+	width:550px;
+	z-index: 10;
+}
+
+#dialogbox > div{ 
+    background: #ff7396; /* Was #FFF;  */
+    margin:8px; 
+}
+    
+#dialogbox > div > #dialogboxhead{ 
+    background: #0000d9; /* Was #666;  */
+    font-size:22px; 
+    padding:10px; 
+    color: #FFF; /* Was #CCC;  */
+    font-weight: bold;
+}
+
+#dialogbox > div > #dialogboxbody{ 
+    background: #FFF; /* Was #333;  */
+    padding:20px;
+    overflow-y: scroll;
+    color: #0000d9; /* Was #FFF;  */
+}
+
+#dialogbox > div > #dialogboxfoot{ 
+    background: #0000d9; /* Was #666;  */
+    padding:10px; 
+    text-align:right; 
+}
+
+/* Paul menu category header stuff */
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+}
+
+li {
+    float:left;
+}   
+
+a:link, a:visited {
+    display:block;
+    width:110px;
+    font-size: .8em;
+    font-weight:bold;
+    color:#FFFFFF;
+    background-color:#940A00;
+    text-align:center;
+    padding:4px;
+    text-decoration:none;
+    text-transform:uppercase;
+}
+
+a:hover, a:active {
+    background-color:#B44A00;
+}
+/* End Paul menu category header stuff */
+
+.menu_categories {
+    position:absolute;
+    top:66px;
+}
+
+.tleft {
+    position: absolute;
+    border: 1px solid red;
+    font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+    top: 90px;
+    width:50%;
+}
+
+.tleft, th {
+    border: 1px solid blue;
+}
+
+.tleft, td {
+    border-bottom: 1px solid blue;
+    white-space: nowrap;
+}
+
+#orderdiv {
+    width: 30%;
+    float: right;
+}
+
+.orders {
+    position: absolute;
+    border: 1px solid red;
+    font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+    table-layout: fixed;
+    margin-right: 20px;
+}
+
+#orders td {
+    border-bottom: 1px solid blue;    
+}
+
+#menulist {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+}
+
+#menulist td, #menulist th {
+    font-size: 1em;
+    border: 1px solid #98bf21;
+    padding: 3px 7px 2px 7px;
+}
+
+#menulist th {
+    font-size: 1.1em;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    background-color: #B40A00;
+    color: #ffffff;
+}
+
+#menulist tr.alt td {
+    color: #000000;
+    background-color: #EAF2D3;
+    }
+
+#orderlist
+{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+}
+
+#orderlist td, #orderlist th {
+    font-size: 1em;
+    border: 1px solid #98bf21;
+    padding: 3px 7px 2px 7px;
+}
+
+#orderlist th {
+    font-size: 1.1em;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    background-color: #B40A00;
+    color: #ffffff;
+}
+
+#orderlist tr.alt td {
+    color: #000000;
+    background-color: #EAF2D3;
+}
+
+#menu {
+    position:absolute;
+    padding-top:5px;
+    top:64px;
+    left:0px;
+    width:128px;
+    bottom:0px;
+    position:fixed;
+    background-color:#000000;
+    font-size:10px;
+    text-align:center;
+}
+
+#footer {
+    position:fixed;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    height:15px;
+    background-color:#940A00;
+    font-size:10px;
+    text-align:center;
+    color:gold;
+}
+
+.logo_img {
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:64px;
+    width:64px;
+    z-index: 1;
+}
+
+.fbbut_img {
+    left:25px;
+    height:25px;
+    width:25px;	
+    bottom:25px;
+    position:fixed;
+}
+
+.pop:hover {
+    animation-name: pop;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes pop {
+    50% {transform: scale(1.25);}
+    100%{transform: scale(1);}
+}
+
+.menusection {
+    width:auto;
+}
+
+.menucolwidth {
+    width:100px;
+    color:red;
+}
+
+.item_sm{
+    width: 50px;
+    height: 50px;
+}
+
+.item_lg {
+    width: 250px;
+    height: 250px;
+    opacity: 0;
+    position: fixed;
+    top: 15%;
+    left: 33%;
+}
+
+.admins {
+    position:absolute;
+    margin:25px;
+    top:100px;
+}
+
+.output {
+    position:absolute;
+    top:85px;
+}
+
+.ordbut {
+    width:20px;
+    height:20px;
+}
+
+#content_body {
+    top:68px;
+    left: 0px;
+    right:0px;
+    height:auto;
+}
+
+#map_canvas {
+    position:relative;
+    float:left;
+    top:85px;
+    margin:20px;
+    width: 500px;
+    height: 300px;
+    background-color: #CCC;
+    z-index: 1;
+}
+
+#address {
+    position:relative;
+    float:left;
+    margin:20px;
+    top:85px;
+    margin-right:50px;
+}
+
+#turkish {
+    position:relative;
+    float:left;
+    top:85px;
+    margin:20px;
+    background-color: #CCC;
+    float:clear;
+}
+
+
+.header {
+    position:fixed;
+    top:0px;
+    left:0px;
+    right:0px;
+    height:64px;
+    width:100%;
+    background-color:#940A00;
+    font-size:48px;
+    font-style:italic;
+    text-align:center;
+    color:white;
+    white-space:nowrap;
+}
+
+
+.item_sm:hover + img {
+    animation-name: fadein;
+    animation-duration: 2s;
+    transition-timing-function: linear;
+    opacity:1
+}
+
+@keyframes fadein {
+    /*1% {opacity:.01;}*/
+    0% {opacity:0;}
+    100%{opacity:1;}
+}
+
+.heart_img {
+    position:absolute;
+    top:12px;
+    right:3%;
+    width:40px;
+    height:40px;
+}
+
+.hbeat:hover {
+    animation-name: hbeat;
+    animation-duration: 0.5s;
+    animation-iteration-count: 3;
+}
+
+@keyframes hbeat {
+    50% {transform: scale(1.2);}
+    100%{transform: scale(1);}
+}
+
+@media only screen and (max-width: 800px) {
+    [class="header"]
+	{
+        font-size:12px;
+    }
+}
+
